@@ -46,6 +46,6 @@ class FavoriteTracksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def favorite_track_params
-      params.require(:favorite_track).permit(:name, :image)
+      params.require(:favorite_track).permit(:name, :image, :artist, :preview_url)
     end
 end
