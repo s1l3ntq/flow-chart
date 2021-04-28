@@ -2,10 +2,14 @@ import React, { Component } from 'react'
 
 export class Track extends Component {
     render() {
-        const {name} = this.props
+        const {name, artist, image} = this.props
         return (
             <div>
-                <p> {name} </p>
+                <h3> {name} </h3>
+                <p> {artist} </p>
+                <br></br>
+                <img className="thumbnail" src={image} alt={name} />
+                
             </div>
         )
     }

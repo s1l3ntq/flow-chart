@@ -7,9 +7,8 @@ export class List extends Component {
     render() {
         let tracks
         if(this.props.tracks) {
-            tracks = this.props.tracks.map((t, index) => <Track key={index} name={t.name} image={t.image} artist={t.artist} />)
-        // jobs = this.props.jobs.map( (job, index) => <Job key={index} title={job.title} company={ job.company } location={ job.location } schedule={ job.type } description={ job.description } url={ job.url }/>)
-        } else {
+            tracks = this.props.tracks.map((t, index) => <Track key={index} name={t.name} image={t.image} artist={t.artists} />)
+       } else {
             tracks = "Loading..."
         }
 
