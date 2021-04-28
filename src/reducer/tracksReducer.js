@@ -1,5 +1,6 @@
 const initialState = {
-    tracks: []
+    tracks: [],
+    favoriteTracks: []
 }
 
 const tracksReducer = (state={initialState}, action) => {
@@ -10,6 +11,14 @@ const tracksReducer = (state={initialState}, action) => {
                 ...state,
                 tracks: action.tracks
             }
+
+        case "ADD_TRACK":
+            // console.log(action.favoriteTrack)
+            return{
+                ...state,
+                favoriteTracks: [...state.favoriteTracks, action.favoriteTrack]
+            }
+            
         default:
             return state;
     }

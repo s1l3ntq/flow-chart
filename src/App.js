@@ -5,9 +5,11 @@ import Header from './components/Header'
 import Form from './components/Form'
 import Home from './components/Home'
 import List from './components/List'
+import { MyFavorites } from './components/MyFavorites'
 import Error from './components/Error'
 import { fetchTracks } from './actions/fetchTracks'
 import { connect } from 'react-redux';
+
 
 
 class App extends Component {
@@ -36,11 +38,12 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-              <Header appname= "flow-chart" />
+              <Header appname= "Flow-Chart" />
               <Form />
               <Switch> 
                 <Route exact path="/" component={Home} />
                 <Route exact path="/tracks" component={List} />
+                <Route exact path="/favorites" component={MyFavorites} />
                 <Route component={Error} />
 
               </Switch>
