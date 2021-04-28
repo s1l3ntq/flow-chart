@@ -5,9 +5,9 @@ import Header from './components/Header'
 import Form from './components/Form'
 import Home from './components/Home'
 import List from './components/List'
-import { MyFavorites } from './components/MyFavorites'
+import MyFavorites from './components/MyFavorites'
 import Error from './components/Error'
-import { fetchTracks } from './actions/fetchTracks'
+import { fetchFavoriteTracks } from './actions/fetchFavoriteTracks'
 import { connect } from 'react-redux';
 
 
@@ -17,22 +17,12 @@ class App extends Component {
   
  
 
-  // componentDidMount() {
-  //   this.props.fetchTracks()
-  // }
-  //   search = () => {
-  //     fetch('http://localhost:3001/api/v1/tracks/search?q=drake')
-  //     .then(r => r.json())
-  //     .then(data => console.log(data))
-  //     }
+  componentDidMount() {
+    this.props.fetchFavoriteTracks()
+  }
 
 
 
-  // addTrack = track => {
-  //   this.setState({
-  //     tracks: [...this.state.tracks, track]
-  //   })
-  // }
 
   render() {
     return (
@@ -57,7 +47,7 @@ class App extends Component {
 
 const mapDispatchToProps = dispatch => {
   return {
-    fetchTracks: () => dispatch(fetchTracks)
+    fetchFavoriteTracks: () => dispatch(fetchFavoriteTracks())
   }
 }
 
