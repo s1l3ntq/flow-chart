@@ -7,15 +7,23 @@ import Form from './components/Form'
 
 class App extends React.Component {
   state = {
-    playlist: []
+    tracks: [],
+    playlist: [],
+  }
+
+  addTrack = track => {
+    this.setState({
+      tracks: [...this.state.tracks, track]
+    })
   }
 
   render() {
+    console.log(this.state.tracks)
     return (
       <div className="App">
         
             <Header appname= "flow-chart" />
-            <Form />
+            <Form addTrack={this.addTrack} />
         
       </div>
     );
