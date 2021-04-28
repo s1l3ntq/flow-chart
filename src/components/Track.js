@@ -9,7 +9,10 @@ export class Track extends Component {
                 <p> {artist} </p>
                 <br></br>
                 <img className="thumbnail" src={image} alt={name} />
-                <img className="preview" src={preview_url} alt={name} />
+                <br></br>
+                <audio controls>
+                <source src={preview_url} type="audio/mpeg" />
+                </audio>
 
                 
             </div>
