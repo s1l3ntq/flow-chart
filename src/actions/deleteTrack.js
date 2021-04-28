@@ -1,6 +1,6 @@
 export const deleteTrack = (id) => {
     return (dispatch) => {
-        fetch(`http://localhost:3001/favorites/${id}`, {
+        fetch(`http://localhost:3001/favorite_tracks/${id}`, {
             method: "DELETE",
             headers: {
                 "Accept": "application/json",
