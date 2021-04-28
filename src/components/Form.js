@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { fetchTracks} from '../actions/fetchTracks'
+import {connect} from 'react-redux'
 
 class Form extends Component {
 
@@ -16,7 +18,7 @@ class Form extends Component {
 
     handleSubmit = e => {
         e.preventDefault();
-        this.props.addTrack(this.state)
+        this.props.fetchTracks(this.state.name)
 
         this.setState({
             name: ""
@@ -26,10 +28,9 @@ class Form extends Component {
     render() {
         return(
             <form onSubmit={this.handleSubmit}>
-                <h2>Search Song or Playlist</h2>
-                <div>
-                    <label htmlFor="name">Name</label>
-                    <input type='text' id='name' name='name' value={this.state.name} onChange={this.handleChange} />
+                
+                <div>   
+                    <input type='text' id='name' name='name' placeholder='Search for songs or artist...' value={this.state.name} onChange={this.handleChange} />
 
                 </div>
                 <br />
@@ -39,5 +40,4 @@ class Form extends Component {
     }
 
 }
-
-export default Form;
+export default connect(null, { fetchTracks })(Form);
