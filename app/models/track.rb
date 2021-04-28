@@ -6,6 +6,7 @@ class Track < ApplicationRecord
           name: spotify_track.name,
           artists: spotify_track.artists[0].name,
           image: spotify_track.album.images[0]["url"],
+          preview_url: spotify_track.preview_url
         )
     end
 

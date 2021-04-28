@@ -1,0 +1,2 @@
+class FavoriteTrack < ApplicationRecord
+end

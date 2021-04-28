@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_28_124047) do
+ActiveRecord::Schema.define(version: 2021_04_28_130307) do
+
+  create_table "favorite_tracks", force: :cascade do |t|
+    t.string "name"
+    t.string "image"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "tracks", force: :cascade do |t|
     t.string "name"
