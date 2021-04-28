@@ -35,7 +35,12 @@ class FavoriteTracksController < ApplicationController
 
   # DELETE /favorite_tracks/1
   def destroy
-    @favorite_track.destroy
+    id = @favorite_track.id
+    if @favorite_track.destroy
+      render json: id
+    else
+      render json: "delete failed"
+    end
   end
 
   private
