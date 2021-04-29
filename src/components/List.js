@@ -14,14 +14,15 @@ export class List extends Component {
        } else {
             tracks = "No Songs Yet"
         }
-
         return (
-            <div>
-                <h1>Hello</h1>
-                <Header />
-                <Form />
-                {tracks}
-               {/* <p>{this.props.tracks[0]}</p> */}
+            <div >
+                <div className="Track-List">
+                    
+                    <Header/>
+                    <Form />
+                    {tracks}
+                {/* <p>{this.props.tracks[0]}</p> */}
+                </div>
             </div>
         )
     }

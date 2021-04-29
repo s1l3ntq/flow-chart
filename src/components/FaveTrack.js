@@ -13,7 +13,7 @@ export class FaveTrack extends Component {
     render() {
         const {name, artist, image, preview_url} = this.props
         return (
-            <div>
+            <div className="track-item">
                 <h3> {name} </h3>
                 <p> {artist} </p>
                 <br></br>

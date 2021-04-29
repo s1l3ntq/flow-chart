@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import FaveTrack from './FaveTrack'
-import Header from './Header'
-import Form from './Form'
 
 class MyFavorites extends Component {
     render() {
@@ -14,9 +12,8 @@ class MyFavorites extends Component {
         }
 
         return (
-            <div>
-                <Header />
-                <Form />
+            <div className="Track-List">
+                <h1>My Favorites</h1>
                 {tracks}
             </div>
         )

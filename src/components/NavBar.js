@@ -10,7 +10,7 @@ export class NavBar extends Component {
                     <div className="navbar-complete">
                         <li name="/" className="navbar-item"><Link to="/">Home</Link></li>
                         <div className="text-nav-item">
-                            <li name="/about" className="navbar-item"><Link to="/about">About Flow Chart</Link></li>
+                            <li name="/about" className="navbar-item"><Link to="/about">About FlowChart</Link></li>
                             <li name="/tracks" className="navbar-item"><Link to="/tracks">Search Music</Link></li>
                             <li name="/favorites" className="navbar-item"><Link to="/favorites">My Favorites</Link></li>
                         </div>

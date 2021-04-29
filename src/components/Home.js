@@ -4,9 +4,9 @@ import React, { Component } from 'react'
 export class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="Home">
                 
-                <h1>Welcome to Flow-Chart</h1>
+               <h1> Welcome to FlowChart</h1>
                 
             </div>
         )
