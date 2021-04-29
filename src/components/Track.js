@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { favoriteTrack } from '../actions/favoriteTrack'
 import {connect} from 'react-redux'
 
+
 export class Track extends Component {
 
     handleFavorites = () => {
@@ -27,6 +28,8 @@ export class Track extends Component {
 
                 
             </div>
+
+                
         )
     }
 }
