@@ -5,9 +5,20 @@ import {connect} from 'react-redux'
 
 export class FaveTrack extends Component {
 
+    constructor(props) {
+        super(props)
+        this.state = {
+            likes: 0
+        }
+    }
+
     handleDelete = () => {
         this.props.deleteTrack(this.props.id)
         
+    }
+
+    handleLike = () => {
+        this.props.addLikes(this.props.id)
     }
 
     render() {
@@ -23,6 +34,7 @@ export class FaveTrack extends Component {
                 <source src={preview_url} type="audio/mpeg" />
                 </audio>
                 <p><button onClick={this.handleDelete}>Delete</button></p>
+                <p><button onClick={this.handleLike}>Likes</button></p>
 
                 
             </div>

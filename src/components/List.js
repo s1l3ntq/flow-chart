@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import Track from './Track'
 import Form from './Form'
 import Header from './Header'
-// import { fetchTracks} from '../actions/'
 
 export class List extends Component {
     render() {
@@ -21,7 +20,6 @@ export class List extends Component {
                     <Header/>
                     <Form />
                     {tracks}
-                {/* <p>{this.props.tracks[0]}</p> */}
                 </div>
             </div>
         )

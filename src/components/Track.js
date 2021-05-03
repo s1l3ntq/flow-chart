@@ -25,7 +25,7 @@ export class Track extends Component {
                     <audio controls>
                     <source src={preview_url} type="audio/mpeg" />
                     </audio>
-                    <p><button onClick={this.handleFavorites}>Fave</button></p>
+                    <p><button onClick={this.handleFavorites}>Fav</button></p>
   
             </div>
                 

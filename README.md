@@ -1,6 +1,24 @@
+# FlowChart
+================================================
+This is a Web application that was developed in 
+React-Redux, frontend and Ruby backend.
+
+It allows you to search for any artist or song and
+display limited information about it. 
+
+If you like the song  save it in your favorites,
+If you are not sure of a listen to the preview.
+
+##### Install
+React-redux
+React-router
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
 
 ## Available Scripts
 
@@ -8,8 +26,11 @@ In the project directory, you can run:
 
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Fork this repo(Main, Master branches) and
+Run the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser. (Frontend)
+
+Open (http://localhost:3001) from the main branch to access the backend stored data.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.

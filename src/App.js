@@ -40,9 +40,8 @@ class App extends Component {
                 <Route exact path="/tracks" component={List} />
                 <Route exact path="/favorites" component={MyFavorites} />
                 <Route component={ErrorPage} />
-
               </Switch>
-              <Footer/>
+              <Footer />
 
         </div>
       </Router>
